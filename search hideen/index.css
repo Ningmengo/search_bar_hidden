@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right,#FFCF71,#2376DD);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search{
+    position: relative;
+}
+
+.search input{
+    background-color: white;
+    border:0;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    padding-left: 5px;
+    transition: width 0.3s ease;
+
+}
+
+.btn{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    padding: 15px;
+    transition: transform 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("Element_Cryo.png");
+    background-size: cover;
+    border-width: 0;
+    
+}
+.btn:focus,input:focus{
+    outline: 0;
+}
+
+.search.active input{
+    width: 300px;
+}
+
+.search.active button{
+    transform: translateX(298px);
+}
